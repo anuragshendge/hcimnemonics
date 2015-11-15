@@ -1,2 +1,2 @@
 # hcimnemonics
-HCI Mnemonic Dictionary application to improve Usability
+HCI Mnemonic Dictionary application to improve Usability.
