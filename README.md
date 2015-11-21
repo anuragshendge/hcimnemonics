@@ -1,3 +1,3 @@
 # hcimnemonics
 
-## Start with Login.html page
+## Start with LoginPage.html page
