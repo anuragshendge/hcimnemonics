@@ -1,0 +1,35 @@
+#d1{
+	position:absolute;
+	left:25%;
+	top:25%;
+	width:50%;
+}
+#f1 button
+{
+	position:absolute;
+	width:100%;
+}
+#d1 a
+{
+	position:absolute;
+	left:42%;
+}
+#forgot_signup button
+{
+	position:absolute;
+	width:100%;
+}
+#back
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+h3
+{
+	position: absolute;
+	top:70%;
+	left:30%;
+	color:#280000;
+}

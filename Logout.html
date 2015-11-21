@@ -1,8 +1,55 @@
 <html>
 	<head>
 		<title>Log Out</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+		<img src="background.png" id="back" />
+
+
+	</head>
+
+
     <body>
-    You Have logged out!!
-	<button onclick="window.location='LoginPage.html'">Login again!</button>
+
+	<div id="d1">
+    <h3>You Have logged out!!</h3>
+	<button onclick="window.location='LoginPage.html'" class="btn btn-primary">Login again!</button>
+	</div>
+
+
+	<style type="text/css">
+
+	#back
+	{
+	position:fixed;
+	width:100%;
+	height:100%;
+
+	z-index:-10;
+	}
+
+	#d1
+	{
+		position: absolute;
+		left: 40%;
+		top:40%;
+	}
+	#d1 button
+	{
+		width: 100%;
+		
+	}
+
+	</style>
+
+
     </body>
+
+
 </html>

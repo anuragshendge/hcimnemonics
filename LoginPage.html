@@ -1,17 +1,58 @@
 <html>
 	<head>
 		<title>Login</title>
-        Username:<input type="text" id="" ><br>
-        Password:<input type="password" id="" ><br>
-        <button onclick="window.location='HomePage.html'">Login</button>
-        <br><a href="ForgotPassword.html"> Forgot Password </a>
-		<br>
-		<br>
-		<a> New to My app!! </a>
-		<br>
-		<button onclick="window.location='SignUp.html'">Sign Up</button>
-    </head>
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<link href="style/style.css" rel="stylesheet"></link>
+		<img src="background.png" id="back" />
+ 	</head>
+
     <body>
-      
+
+
+
+
+<div id="d1">
+
+
+    	<form id="f1" action="HomePage.html">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+ 		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Remember me
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-primary" id="submit_login">Login</button><br><br>
+		   <a href="ForgotPassword.html"> Forgot Password </a><br>
+		</form>
+
+
+
+	<div id="forgot_signup">
+       
+		<button onclick="window.location='SignUp.html'" class="btn btn-danger">Sign Up</button>
+		
+
+	</div>	
+
+</div>
+
+
+
+
+   
     </body>
 </html>

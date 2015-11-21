@@ -1,15 +1,62 @@
 <html>
 	<head>
 	
-	<title>Favorite Area</title>
-	<button onclick="window.location='HomePage.html'">Home</button>
-	<button onclick="window.location='Logout.html'">Logout</button>
-	<br>
-        Lets Start:<br>
-		What is Favorite area?<input type="text" id="" ><br>
-        <button onclick="window.location='FirstPage.html'">Submit</button>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<link href="style/firsttimeask.css" rel="stylesheet"></link>
+		<img src="background.png" id="back" />
+
+
+
     </head>
     <body>
       
+	<div id="top_bar">
+		<img src="topbar.jpg" id="back1" />
+	</div>
+
+	<h1><div id="bar_elem">
+	<strong><a href="HomePage.html">Home</a></strong>&nbsp
+	<strong><a href="Logout.html">Logout</a></strong>
+	<br>
+	</div></h1>  
+	
+	<title>Favorite Area</title>
+
+	<br>
+		<h2>Enter your area of interest below</h2><br><br>
+        <div id="fav">
+	<br>
+		<input type="text" class="form-control" id="tags"><br>
+        <button class="btn btn-primary" onclick="window.location='FirstPage.html'">Submit</button>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+    $(function() {
+    var availableTags = [
+      "Philosphy",
+      "Sports",
+      "Science",
+      "Positive words",
+      "Negative Words",
+      "Environment",
+      "Movies",
+      "Most Important words",
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+
+    </script>
+
     </body>
 </html>

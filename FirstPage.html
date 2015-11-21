@@ -1,10 +1,62 @@
 <html>
 	<head>
 		<title>First Word</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<link href="style/word.css" rel="stylesheet"></link>
+		<img src="background.png" id="back" />
+	</head>
+		
     <body>
-	<button onclick="window.location='HomePage.html'">Home</button>
-	<button onclick="window.location='Logout.html'">Logout</button>
+	<div id="top_bar">
+	<img src="topbar.jpg" id="back1" />
+	</div>
+
+	<h1><div id="bar_elem">
+	<strong><a href="HomePage.html">Home</a></strong>&nbsp
+
+	<strong><a href="Logout.html">Logout</a></strong>
 	<br>
-    First Word
+	
+	</div></h1>
+
+<button class="btn btn-primary" id="next">Next</button>
+	<div id="word">
+
+		<p id="wrd"></p><br>
+		<p id="meaning"></p><br>
+		<div id="image">/<div>
+		<p id="synonyms"></p>	
+		
+
+	</div>
+	
+
+
+	<script type="text/javascript">
+
+	var words=["aa","bb","cc","aa","bb","cc","aa","bb","cc"];
+
+	var i=0;
+
+	$('#next').click(function(){
+
+		$('#word').text(words[i]);
+		i++;
+
+	})
+
+
+
+	</script>
+
+
 	</body>
+
+
+
 </html>
