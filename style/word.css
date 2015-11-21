@@ -41,6 +41,79 @@ top:0%;
 #word
 {
 	position: absolute;
-	left:50%;
+	left:10%;
+	top:10%;
+	width:70%;
+}
+#wrd
+{
+	position: absolute;
+
 	top:50%;
+}
+#meaning
+{
+	position: absolute;
+
+	top:100%;
+}
+#image
+{
+	position: absolute;
+	left:60%;
+	top:0%;
+}
+#synonyms
+{
+	position: absolute;
+	top:250%;
+
+
+}
+#next
+{
+	position: absolute;
+	right:0%;
+	top:6%;
+	height:94%;
+	width:5%;
+}
+#previous
+{
+	position: absolute;
+	left:0%;
+	top:6%;
+	height:94%;
+	width:5%;
+}
+#change
+{
+	position: absolute;
+	left:10%;
+	top:90%;
+}
+
+#test
+{
+	position: absolute;
+	
+	top:300%;
+	left:12%;
+}
+#soun
+{
+	position: absolute;
+	top:300%;
+	width:5%;
+}
+#hint
+{
+	position: absolute;
+	
+	top:150%;
+}
+#explain
+{
+	position: absolute;
+	top:200%;
 }

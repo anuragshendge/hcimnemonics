@@ -21,32 +21,122 @@
 
 	<strong><a href="Logout.html">Logout</a></strong>
 	<br>
-	
+
+<!--<img src="hearit.png " onclick="document.getElementById('sound1').play();" width="12" height="12"></img></p>-->
 	</div></h1>
 
-<button class="btn btn-primary" id="next">Next</button>
-	<div id="word">
+<!--<button class="btn btn-primary" id="next"><h1>  N <br />E <br />X <br />T <br />  </h1></button>
+<button class="btn btn-primary" id="previous"><h1> P <br />R <br />E <br />V <br />I <br />O <br />U <br />S<br /> </h1></button>-->
 
+
+<button class="btn btn-link" id="next"><h1>  >> </h1></button>
+<button class="btn btn-link" id="previous"><h1> << </h1></button>
+
+<button class="btn btn-primary" id="change" onclick="window.location='FirstTimeAskQuestion.html'">Change Topic</button>
+	<div id="word">
+	<font size="3" face="verdana">
 		<p id="wrd"></p><br>
 		<p id="meaning"></p><br>
+		<p id="hint"></p>
+		<p id="explain"></p>
+
+		
+		<p id="synonyms"></p>	<br>
+
+		<button id="test" class="btn btn-info">Synonyms</button>
+		<div id="soun"></div>
 		<div id="image">/<div>
-		<p id="synonyms"></p>	
+		
 		
 
 	</div>
 	
 
-
 	<script type="text/javascript">
 
 	var words=["aa","bb","cc","aa","bb","cc","aa","bb","cc"];
+	var meanings=["m1","m2","m3","m4","m5","m6","m7","m8","m9"];
+	var image=["http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg","http://7-themes.com/data_images/out/42/6914793-tropical-beach-images.jpg","http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg","http://www.quicksprout.com/images/foggygoldengatebridge.jpg","http://i765.photobucket.com/albums/xx291/just-meller/national%20geografic/Birds-national-geographic-6873734-1600-1200.jpg","http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg","https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7qOga3T5MiiOzUMdOnB29l9_Qa1mNJBZhSLnwcjG8ZrmlFd5Y"];
+	var syn={"aa":["names","numbers"],"bb":["somethings"],"cc":["lion","tiger"]};
+	var audio="https://ssl.gstatic.com/dictionary/static/sounds/de/0/connoisseur.mp3";
+	var hints={"aa":["names","numbers"],"bb":["somethings"],"cc":["lion","tiger"]};
+	var explanation=["one","two","three","four","five","six","seven","eight","nine"];
 
 	var i=0;
 
-	$('#next').click(function(){
+		$('#wrd').text("WORD: "+words[0]);
+		$('#meaning').text("MEANING: "+meanings[0]);
+	
+		$('#test').click(function(){
+		$('#synonyms').text("SYNONYMS: "+syn[words[0]]);})
+		$('#hint').text("HINTS: "+hints[words[0]]);
+		$('#explain').text("EXPLANATION: "+explanation[0]);
+		$("#image").html("<img src='"+image[0]+"' height='500' width='500' />");
+		$('#soun').append("<button id='xx' class='btn btn-info'>Pronounce<audio id='sound1' src='"+audio+"' preload='auto'></audio>");
 
-		$('#word').text(words[i]);
+		$('#xx').click(function(){
+		document.getElementById('sound1').play();
+			
+		});
+
+	$('#next').click(function(){
+	
+	$('#synonyms').text("");
+	if(i<=8)
+	{
+		if(i!=8)
 		i++;
+		$('#wrd').text("WORD: "+words[i]);
+		$('#meaning').text("MEANING: "+meanings[i]);
+				$('#test').click(function(){
+		$('#synonyms').text("SYNONYMS: "+syn[words[i]]);})
+		$('#hint').text("HINTS: "+hints[words[i]]);
+		$('#explain').text("EXPLANATION: "+explanation[i]);
+		$("#image").html("<img src='"+image[i]+"' height='500' width='500' />");
+		//$("#word").append("<img src='http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg' />");
+		
+		$('#soun').html("<button id='xx' class='btn btn-info'>Pronounce<audio id='sound1' src='"+audio+"' preload='auto'></audio>");
+
+		$('#xx').click(function(){
+		document.getElementById('sound1').play();
+			
+		});
+
+
+	}
+	
+
+	})
+
+
+
+	$('#previous').click(function(){
+	
+	
+	$('#synonyms').text("");
+	if(i>=0)
+	{
+		if(i!=0)
+		i--;
+		$('#wrd').text("WORD: "+words[i]);
+		$('#meaning').text("MEANING: "+meanings[i]);
+				$('#test').click(function(){
+		$('#synonyms').text("SYNONYMS: "+syn[words[i]]);})
+		$('#hint').text("HINTS: "+hints[words[i]]);
+		$('#explain').text("EXPLANATION: "+explanation[i]);
+		$("#image").html("<img src='"+image[i]+"' height='500' width='500' />");
+		//$("#word").append("<img src='http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg' />");
+		
+		$('#soun').html("<button id='xx' class='btn btn-info'>Pronounce<audio id='sound1' src='"+audio+"' preload='auto'></audio>");
+
+		$('#xx').click(function(){
+		document.getElementById('sound1').play();
+			
+		});
+
+
+	}
+		
 
 	})
 
