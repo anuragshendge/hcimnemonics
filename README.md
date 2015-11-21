@@ -1,2 +1,3 @@
 # hcimnemonics
-HCI Mnemonic Dictionary application to improve Usability.
+
+## Start with LoginPage.html page
