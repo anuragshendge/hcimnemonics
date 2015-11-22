@@ -1,0 +1,86 @@
+#back
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+
+	z-index:-10;
+}
+#top_bar
+{
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:6%;
+
+	z-index:-1;
+}
+#back1
+{
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+
+	z-index:-1;
+}
+a
+{
+	color:white;
+}
+
+#bar_elem
+{
+position: absolute;
+right:5%;
+top:2%;
+}
+
+#next
+{
+	position: absolute;
+	right:0%;
+	top:6%;
+	height:94%;
+	width:5%;
+}
+#previous
+{
+	position: absolute;
+	left:0%;
+	top:6%;
+	height:94%;
+	width:5%;
+}
+#buttons
+{
+position: absolute;
+left:40%;
+top:40%;
+}
+#qanda
+{
+position: absolute;
+left:40%;
+top:50%;
+}
+#word
+{
+	position: fixed;
+	top:30%;
+	left:40%;
+}
+#qui
+{
+	position: fixed;
+	top:10%;
+	left:45%;
+}
+#number
+{
+	position: fixed;
+	top:31%;
+	left:36%;
+}

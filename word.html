@@ -7,7 +7,7 @@
 		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-		<link href="style/word.css" rel="stylesheet"></link>
+		<link href="style/word_single.css" rel="stylesheet"></link>
 <img src="background.png" id="back" />
 	</head>
 		
@@ -32,8 +32,8 @@
 <button class="btn btn-primary" id="previous"><h1> P <br />R <br />E <br />V <br />I <br />O <br />U <br />S<br /> </h1></button>-->
 
 
-<button class="btn btn-link" id="next"><h1>  >> </h1></button>
-<button class="btn btn-link" id="previous"><h1> << </h1></button>
+
+<button class="btn btn-link" id="previous"> <h3><strong>Back</strong></h3> </button>
 
 
 	<div id="word">
@@ -70,6 +70,8 @@
 
 
 
+
+
 	    $(function() {
     var availableTags = [
       "Connoisseur",
@@ -87,9 +89,9 @@
   });
 
 
-	    $('#searchbutton').click(function(){
+	    $('#previous').click(function(){
 
-	    	window.location="word.html";
+	    	window.location="Firstpage.html";
 	    });
 
 
@@ -106,20 +108,20 @@
 	var notes=["The fact that, in practice, the judgments even of connoisseurs are perpetually at variance.","aaaac","aaa","aaaac","aaa","aaaac","aaa","aaaac","rwerr"];
 	var i=0;
 
-		$('#wrd').text(words[0]);
-		$('#wrd').css('color',colors[0]);
-		$('#meaning').html("<strong>Meaning: </strong>"+meanings[i]);
+		$('#wrd').text("Connoisseur");
+		$('#wrd').css('color','red');
+		$('#meaning').html("<strong>Meaning: </strong>"+"an expert judge in matters of taste");
 				$('#test').click(function(){
 					$('#notebox').css('visibility','hidden');
 					$('#test3').css('visibility','hidden');
 					$('#saved').css('visibility','hidden');
-		$('#synonyms').html("<strong>Synonyms: </strong>"+syn[words[i]]);})
+		$('#synonyms').html("<strong>Synonyms: </strong>"+syn[words[0]]);})
 				$('#test1').click(function(){
 					//alert($('test1').name());
 					$('#notebox').css('visibility','hidden');
 					$('#test3').css('visibility','hidden');
 					$('#saved').css('visibility','hidden');
-		$('#synonyms').html("<strong>Antonyms: </strong>"+ant[words[i]]);})
+		$('#synonyms').html("<strong>Antonyms: </strong>"+ant[words[0]]);})
 		$('#test2').click(function(){
 	
 					$('#notebox').css('visibility','visible');
@@ -141,115 +143,10 @@
 			
 		});
 
-	$('#next').click(function(){
-	$('#test3').css('visibility','hidden');
-	$('#synonyms').text("");
-	$('#saved').css('visibility','hidden');
-	$('#notebox').css('visibility','hidden');
-	if(i<=8)
-	{
-		if(i!=8)
-		i++;
-		$('#wrd').text(words[i]);
-		$('#wrd').css('color', colors[i]);
-		$('#meaning').html("<strong>Meaning: </strong>"+meanings[i]);
-				$('#test').click(function(){
-					$('#notebox').css('visibility','hidden');
-					$('#test3').css('visibility','hidden');
-					$('#saved').css('visibility','hidden');
-		$('#synonyms').html("<strong>Synonyms: </strong>"+syn[words[i]]);})
-				$('#test1').click(function(){
-					//alert($('test1').name());
-					$('#notebox').css('visibility','hidden');
-					$('#test3').css('visibility','hidden');
-					$('#saved').css('visibility','hidden');
-		$('#synonyms').html("<strong>Antonyms: </strong>"+ant[words[i]]);})
-				$('#test2').click(function(){
-					
-					$('#notebox').text(notes[i]);
-					$('#notebox').css('visibility','visible');
-					$('#test3').css('visibility','visible');
-					$('#saved').css('visibility','hidden');
-		})
-					$('#test3').click(function(){
-			$('#saved').css('visibility','visible');
-		});
-		$('#hint').html("<strong>Hints: </strong>"+hints[words[i]]);
-		$('#explain').html("<strong>Explanation: </strong>"+explanation[i]);
-		$("#image").html("<img src='"+image[i]+"' height='500' width='500' style='border:10px outset silver;'/>");
-		//$("#word").append("<img src='http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg' />");
-		
-		$('#soun').html("<img src='hearit.png' id='xx' class='btn btn-link'><audio id='sound1' src='"+audio[i]+"' preload='auto'></audio>");
-
-		$('#xx').click(function(){
-		document.getElementById('sound1').play();
-			
-		});
-		if(i==8)
-		{
-			i++;
-		}
-
-	}
-
-	else
-	{
-		window.location="Quiz.html";
-	}
-
-	})
+	
 
 
-
-	$('#previous').click(function(){
-	$('#test3').css('visibility','hidden');
-	$('#saved').css('visibility','hidden');
-	$('#notebox').css('visibility','hidden');
-	$('#synonyms').text("");
-	if(i>=0)
-	{
-		if(i!=0)
-		i--;
-		$('#wrd').text(words[i]);
-		$('#wrd').css('color', colors[i]);
-		$('#meaning').html("<strong>Meaning: </strong>"+meanings[i]);
-				$('#test').click(function(){
-					$('#notebox').css('visibility','hidden');
-					$('#test3').css('visibility','hidden');
-					$('#saved').css('visibility','hidden');
-		$('#synonyms').html("<strong>Synonyms: </strong>"+syn[words[i]]);})
-				$('#test1').click(function(){
-					//alert($('test1').name());
-					$('#notebox').css('visibility','hidden');
-					$('#test3').css('visibility','hidden');
-					$('#saved').css('visibility','hidden');
-		$('#synonyms').html("<strong>Antonyms: </strong>"+ant[words[i]]);})
-				$('#test2').click(function(){
-					$('#notebox').text(notes[i]);
-					$('#notebox').css('visibility','visible');
-					$('#test3').css('visibility','visible');
-					$('#saved').css('visibility','hidden');
-		})
-					$('#test3').click(function(){
-			$('#saved').css('visibility','visible');
-		});
-				$('#hint').html("<strong>Hints: </strong>"+hints[words[i]]);
-		$('#explain').html("<strong>Explanation: </strong>"+explanation[i]);
-		$("#image").html("<img src='"+image[i]+"' height='500' width='500' style='border:10px outset silver;'/>");
-		//$("#word").append("<img src='http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg' />");
-		
-		$('#soun').html("<img src='hearit.png' id='xx' class='btn btn-link'><audio id='sound1' src='"+audio[i]+"' preload='auto'></audio>");
-
-		$('#xx').click(function(){
-		document.getElementById('sound1').play();
-			
-		});
-
-
-	}
-		
-
-	})
+	
 
 
 

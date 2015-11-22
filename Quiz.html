@@ -1,0 +1,116 @@
+<html>
+
+<head>
+		<title>First Word</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<link href="style/quiz.css" rel="stylesheet"></link>
+		<img src="background.png" id="back" />
+</head>
+
+
+
+<body>
+
+	<div id="top_bar">
+	<img src="https://s3.graphiq.com/sites/default/files/2307/media/images/Facebook_Blue_1409375.png" id="back1"  />
+	</div>
+
+	<h5><div id="bar_elem">
+	
+	<strong><a href="HomePage.html">Home</a></strong>&nbsp&nbsp&nbsp 
+
+	<strong><a href="Logout.html">Logout</a></strong>
+	
+
+	<br>
+	</div></h5>
+
+<button class="btn btn-link" id="next"><h1>  >> </h1></button>
+<button class="btn btn-link" id="previous"><h1> << </h1></button>
+<h1><p id="qui"><strong>QUIZ</strong></p></h1>
+<div id="qanda">
+<h3><p id="number"></p></h3>
+<h1><p id="word"></p></h1>
+<input type="radio" value="1" id="r1" name="t" checked="checked" /><span id="s1">First</span><br><br>
+<input type="radio" value="2" id="r2" name="t" /><span id="s2">Second</span><br><br>
+<input type="radio" value="3" id="r3" name="t" /><span id="s3">Third</span><br><br>
+<input type="radio" value="4" id="r4" name="t" /><span id="s4">Fourth</span><br><br>
+</div>
+
+<div id="buttons">
+<button id="blue" class="btn btn-primary">Positive</button>
+<button id="red" class="btn btn-danger">Negative</button>
+<button id="white" class="btn btn-default">Neutral</button>
+</div>
+
+
+
+<script type="text/javascript">
+
+
+var words=["first","second","third","fourth","fifth"];
+var i=0;
+$('#number').text(1+"/5)");
+$('#word').text(words[0]);
+
+$('#next').click(function(){
+if(i<=4)
+{
+
+i++;
+if(i!=5){
+$('#number').text(i+1+"/5)");
+$('#word').text(words[i]);
+}
+else
+{
+	window.location="Quizdone.html";
+}
+}
+
+
+
+});
+
+
+$('#previous').click(function(){
+
+if(i>0)
+i--;
+$('#number').text(i+1+"/5)");
+$('#word').text(words[i]);
+
+});
+
+$('#red').click(function(){
+
+$('#word').css('color','red');
+
+});
+
+$('#blue').click(function(){
+
+$('#word').css('color','blue');
+
+});
+
+$('#white').click(function(){
+
+$('#word').css('color','black');
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

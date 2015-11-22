@@ -70,21 +70,15 @@ top:2%;
 
 
 }
-#next
-{
-	position: absolute;
-	right:0%;
-	top:6%;
-	height:94%;
-	width:5%;
-}
+
 #previous
 {
-	position: absolute;
+	position: fixed;
 	left:0%;
-	top:6%;
-	height:94%;
+	top:-3%;
 	width:5%;
+	color:white;
+
 }
 #change
 {
