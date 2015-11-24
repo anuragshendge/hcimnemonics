@@ -1,12 +1,120 @@
 <html>
 	<head>
-		<title>Some Game</title>
-		<button onclick="window.location='HomePage.html'">Home</button>
-	<button onclick="window.location='Logout.html'">Logout</button>
-	<br>
-        Some game
+	<title>Game</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+		<link href="http://code.jquery.com/ui/1.11.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<link href="style/game.css" rel="stylesheet"></link>
+<img src="background.png" id="back" />
+
     </head>
+
+
     <body>
-      
+      <div id="top_bar">
+	<img src="https://s3.graphiq.com/sites/default/files/2307/media/images/Facebook_Blue_1409375.png" id="back1"  />
+	</div>
+
+	<h5><div id="bar_elem">
+	
+	<strong><a href="HomePage.html">Home</a></strong>&nbsp&nbsp&nbsp 
+
+	<strong><a href="Logout.html">Logout</a></strong>
+	
+
+	<br>
+	</div></h5>
+
+
+	<div id="words">
+
+		<h3><p id="word">aaa</word></h3>
+
+	</div>
+
+
+	<div id="buttons">
+<button id="one" class="btn btn-primary"><p id="o1">One</p></button>&nbsp
+<button id="two" class="btn btn-primary"><p id="o2">two</p></button>&nbsp
+<button id="three" class="btn btn-primary"><p id="o3">three</p></button>&nbsp
+<button id="four" class="btn btn-primary"><p id="o4">four</p></button>
+
+
+	</buttons>
+<h1><strong><p id="marks">Score: 0</p></strong></h1>	
+<div id="lost"><strong><h2>Game Over, your final score is<p id="ns"></p></h2></strong><br><button id="lost_but" class="btn btn-danger">RESTART</button></div>
+
+	<script type="text/javascript">
+	var score=0;
+var i=0;
+var questions=["dd","xx","cc","aa","bb"];
+var meanings={"dd":["a","b","c","d"],"xx":["a","b","c","d"],"cc":["a","b","c","d"],"aa":["a","b","c","d"],"bb":["a","b","c","d"]}
+var p=0;
+	function down()
+	{
+		var new_pos=$('#word:first').position().top;
+		var pos=10+new_pos+'px';
+		
+		$('#word').css('top', pos);
+
+		if(10+new_pos>=580)
+		{
+		$('#one,#two,#three,#four').prop('disabled', true);
+		$('#ns').text(" "+score);
+
+		$('#word').css('top', '23px');
+		$('#lost').css('visibility','visible');
+		}
+	}
+
+setInterval(down,1000);
+down();
+$('#one').click(function(){
+if(i>=questions.length)
+{
+	i=-1;
+}
+score++;
+$('#marks').text("Score: "+score);
+i++;
+
+//alert(meanings[questions[i]][1]);
+$('#o1').text(meanings[questions[i]][0]);
+$('#o2').text(meanings[questions[i]][1]);
+$('#o3').text(meanings[questions[i]][2]);
+$('#o4').text(meanings[questions[i]][3]);
+$('#word').text(questions[i])
+$('#word').css('top', '23px');
+})
+
+
+$('#two,#three,#four').click(function(){
+if(i>=questions.length)
+{
+	i=-1;
+}
+	i++;
+	//$( "#buttons" ).disable();
+$('#one,#two,#three,#four').prop('disabled', true);
+$('#ns').text(" "+score);
+
+	$('#word').css('top', '23px');
+	$('#lost').css('visibility','visible');
+});
+
+$('#lost_but').click(function(){
+	score=0;
+	$('#marks').text("Score: "+score);
+	$('#word').css('top', '23px');
+	$('#lost').css('visibility','hidden');
+	$('#one,#two,#three,#four').prop('disabled', false);
+})
+	</script>
+
+
+
     </body>
 </html>
