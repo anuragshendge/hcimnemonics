@@ -40,12 +40,12 @@ top:2%;
 #word
 {
 position: absolute;
-right:700px;
+right:640px;
 top:23px;
 }
 #buttons{
 	position:absolute;
-	top:90%;
+	top:86%;
 	left:40%;
 }
 #lost
@@ -71,4 +71,12 @@ top:23px;
 #ns
 {
 	width:100%;
+}
+
+#five
+{
+	position:fixed;
+	width:500px;
+	top:94%;
+	left:34%;
 }
