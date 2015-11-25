@@ -62,13 +62,13 @@ color:yellow;
 {
 position: absolute;
 left:40%;
-top:40%;
+top:70%;
 }
 #qanda
 {
 position: absolute;
 left:40%;
-top:50%;
+top:36%;
 }
 #word
 {
@@ -87,4 +87,12 @@ top:50%;
 	position: fixed;
 	top:31%;
 	left:36%;
+}
+#notice
+{
+	top:71%;
+	left:30%;
+	position: fixed;
+	background: LightYellow;
+
 }

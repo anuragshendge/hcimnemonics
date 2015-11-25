@@ -36,7 +36,11 @@ position: absolute;
 right:5%;
 top:2%;
 }
+#fir:hover,#sec:hover,#thh:hover
+{
 
+color:yellow;
+}
 #fav
 {
 	position: absolute;

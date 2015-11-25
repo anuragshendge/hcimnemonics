@@ -18,6 +18,7 @@
 
 	<h5><div id="bar_elem">
 	<strong><a href="FirstTimeAskQuestion.html" id="thh">Change topic</a></strong>&nbsp&nbsp&nbsp 
+	<strong><a href="help.html" id="fir">Help</a></strong>&nbsp&nbsp&nbsp 
 	<strong><a href="HomePage.html" id="fir">Home</a></strong>&nbsp&nbsp&nbsp 
 
 	<strong><a href="Logout.html" id="sec">Logout</a></strong>
@@ -33,7 +34,7 @@
 
 
 
-<button class="btn btn-link" id="previous"> <h3><strong>Back</strong></h3> </button>
+<button class="btn btn-link" id="previous"> <h5><strong>Back to words screen</strong></h5> </button>
 
 
 	<div id="word">
@@ -74,7 +75,7 @@
 
 	    $(function() {
     var availableTags = [
-      "Connoisseur",
+      "connoisseur",
       "Ambulation",
       "Cacophony",
       "Pseudo",
@@ -96,20 +97,20 @@
 
 
 
-	var words=["Connoisseur","absolutism","cc","aa","bb","cc","aa","bb","cc"];
+	var words=["connoisseur","absolutism","cc","aa","bb","cc","aa","bb","cc"];
 	var meanings=["an expert judge in matters of taste","m2","m3","m4","m5","m6","m7","m8","m9"];
-	var image=["http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg","http://7-themes.com/data_images/out/42/6914793-tropical-beach-images.jpg","http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg","http://www.quicksprout.com/images/foggygoldengatebridge.jpg","http://i765.photobucket.com/albums/xx291/just-meller/national%20geografic/Birds-national-geographic-6873734-1600-1200.jpg","http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg","https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7qOga3T5MiiOzUMdOnB29l9_Qa1mNJBZhSLnwcjG8ZrmlFd5Y"];
-	var syn={"Connoisseur":["expert", "authority", "specialist", "pundit", "savant"],"bb":["somethings"],"cc":["lion","tiger"]};
-	var ant={"Connoisseur":["groundling, lowbrow, materialist, philistine"],"bb":["somethings"],"cc":["lion","tiger"]};
+	var image=["http://parentpathway.com/wp-content/uploads/2013/03/judge-gavel-order-in-the-court.gif","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg","http://7-themes.com/data_images/out/42/6914793-tropical-beach-images.jpg","http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg","http://www.quicksprout.com/images/foggygoldengatebridge.jpg","http://i765.photobucket.com/albums/xx291/just-meller/national%20geografic/Birds-national-geographic-6873734-1600-1200.jpg","http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg","https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7qOga3T5MiiOzUMdOnB29l9_Qa1mNJBZhSLnwcjG8ZrmlFd5Y"];
+	var syn={"connoisseur":["expert", "authority", "specialist", "pundit", "savant"],"bb":["somethings"],"cc":["lion","tiger"]};
+	var ant={"connoisseur":["groundling, lowbrow, materialist, philistine"],"bb":["somethings"],"cc":["lion","tiger"]};
 	var audio=["https://ssl.gstatic.com/dictionary/static/sounds/de/0/connoisseur.mp3"];
-	var hints={"Connoisseur":[" (In Hindi Language) Connoisseur sounds like kaun inse sure nahi hoga, kaun nahi sure.. Ye to expert hai. He is connoisseur. He is EXPERT."],"bb":["somethings"],"cc":["lion","tiger"]};
-	var explanation=["A Connoisseur of Music","two","three","four","five","six","seven","eight","nine"];
+	var hints={"connoisseur":[" (In Hindi Language) connoisseur sounds like kaun inse sure nahi hoga, kaun nahi sure.. Ye to expert hai. He is connoisseur. He is EXPERT."],"bb":["somethings"],"cc":["lion","tiger"]};
+	var explanation=["A connoisseur of Music","two","three","four","five","six","seven","eight","nine"];
 	var colors=["black","blue","black","black","blue","black","red","blue","black"];
 	var notes=["The fact that, in practice, the judgments even of connoisseurs are perpetually at variance.","aaaac","aaa","aaaac","aaa","aaaac","aaa","aaaac","rwerr"];
 	var i=0;
 
-		$('#wrd').text("Connoisseur");
-		$('#wrd').css('color','red');
+		$('#wrd').text("connoisseur");
+		$('#wrd').css('color','black');
 		$('#meaning').html("<strong>Meaning: </strong>"+"an expert judge in matters of taste");
 				$('#test').click(function(){
 					$('#notebox').css('visibility','hidden');
@@ -134,7 +135,7 @@
 		});
 				
 		$('#hint').html("<strong>Hints: </strong>"+hints[words[i]]);
-		$('#explain').html("<strong>Explanation: </strong>"+explanation[i]);
+		$('#explain').html("<strong>Usage: </strong>"+explanation[i]);
 		$("#image").html("<img src='"+image[0]+"' height='500' width='500' style='border:10px outset silver;'/>");
 		$('#soun').append("<img src='hearit.png' id='xx' class='btn btn-link'><audio id='sound1' src='"+audio[i]+"' preload='auto'></audio>");
 

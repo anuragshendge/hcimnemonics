@@ -21,7 +21,7 @@
 	</div>
 
 	<h5><div id="bar_elem">
-	
+	<strong><a href="help.html" id="fir">Help</a></strong>&nbsp&nbsp&nbsp 
 	<strong><a href="HomePage.html" id="fir">Home</a></strong>&nbsp&nbsp&nbsp 
 
 	<strong><a href="Logout.html" id="sec">Logout</a></strong>
@@ -33,6 +33,7 @@
 <button class="btn btn-link" id="next"><h1>  >> </h1></button>
 <button class="btn btn-link" id="previous"><h1> << </h1></button>
 <h1><p id="qui"><strong>QUIZ</strong></p></h1>
+<div id="notice"><strong>Hints to recollect</strong></div>
 <div id="qanda">
 <h3><p id="number"></p></h3>
 <h1><p id="word"></p></h1>
@@ -53,12 +54,13 @@
 <script type="text/javascript">
 
 
-var words=["Connoisseur","abate","chicanery","latent","coagulate"];
+var words=["connoisseur","abate","chicanery","latent","coagulate"];
 var i=0;
 $('#number').text(1+"/5)");
 $('#word').text(words[0]);
 
 $('#next').click(function(){
+	$('#word').css('color','black');
 if(i<=4)
 {
 
@@ -79,7 +81,7 @@ else
 
 
 $('#previous').click(function(){
-
+$('#word').css('color','black');
 if(i>0)
 i--;
 $('#number').text(i+1+"/5)");

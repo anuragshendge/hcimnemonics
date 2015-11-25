@@ -18,6 +18,7 @@
 
 	<h5><div id="bar_elem">
 	<strong><a href="FirstTimeAskQuestion.html" id="thh">Change topic</a></strong>&nbsp&nbsp&nbsp 
+	<strong><a href="help.html" id="fir">Help</a></strong>&nbsp&nbsp&nbsp 
 	<strong><a href="HomePage.html" id="fir">Home</a></strong>&nbsp&nbsp&nbsp 
 
 	<strong><a href="Logout.html" id="sec">Logout</a></strong>
@@ -72,7 +73,7 @@
 
 	    $(function() {
     var availableTags = [
-      "Connoisseur",
+      "connoisseur",
       "Ambulation",
       "Cacophony",
       "Pseudo",
@@ -94,14 +95,14 @@
 
 
 
-	var words=["Connoisseur","abate","chicanery","latent","coagulate","laud","dissonance","cogent","levity"];
+	var words=["connoisseur","abate","chicanery","latent","coagulate","laud","dissonance","cogent","levity"];
 	var meanings=["an expert judge in matters of taste","become less in amount or intensity","the use of tricks to deceive someone","potentially existing but not presently evident or realized","change to a solid or semisolid state","praise","lack of harmony among musical notes","powerfully persuasive","humor or frivolity"];
-	var image=["http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg","http://7-themes.com/data_images/out/42/6914793-tropical-beach-images.jpg","http://www.planwallpaper.com/static/images/magic-of-blue-universe-images.jpg","http://www.gettyimages.co.uk/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg","http://www.quicksprout.com/images/foggygoldengatebridge.jpg","http://i765.photobucket.com/albums/xx291/just-meller/national%20geografic/Birds-national-geographic-6873734-1600-1200.jpg","http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg","https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7qOga3T5MiiOzUMdOnB29l9_Qa1mNJBZhSLnwcjG8ZrmlFd5Y"];
-	var syn={"Connoisseur":["expert", "authority", "specialist", "pundit", "savant"],"abate":["	subside, die down/away/out, lessen, ease (off), let up, decrease"],"chicanery":["deceitfulness, duplicity, dishonesty,"],"latent":["dormant, untapped, unused, undiscovered, hidden"],"coagulate":["congeal, clot, thicken, jell"],"laud":["praise, extol, hail, applaud, acclaim"],"dissonance":["discord,conflict"],"cogent":["convincing, compelling, strong, forceful, powerful"],"levity":["high spirits, vivacity, liveliness, cheerfulness"]};
-	var ant={"Connoisseur":["groundling, lowbrow, materialist, philistine"],"abate":["intensify, increase"],"chicanery":["honesty","truthfulness"],"latent":["active,clear"],"coagulate":["disperse, liquify"],"laud":["criticize,humiliate"],"dissonance":["accord,peace"],"cogent":["impotent, invalid"],"levity":["seriousness"]};
+	var image=["http://parentpathway.com/wp-content/uploads/2013/03/judge-gavel-order-in-the-court.gif","http://discounttropicalfish.net/images/discount.gif","http://bestanimations.com/Games/Cards/card-trick-animated-gif-2.gif","https://media.giphy.com/media/k29Kh9hu2TZM4/giphy.gif","http://orig04.deviantart.net/c082/f/2013/132/8/3/sam_by_franz888-d651ovc.gif","http://i214.photobucket.com/albums/cc7/gata037/prayer.gif","https://45.media.tumblr.com/0ea93d6e1e56deee6cabe2d61f572c8d/tumblr_mtx0msl5Zh1sbd8szo1_500.gif","http://www.gifs.net/Animation11/Jobs_and_People/Office_and_Businessmen/Happy_boss.gif","http://i80.photobucket.com/albums/j179/lotchs/CareFree.gif"];
+	var syn={"connoisseur":["expert", "authority", "specialist", "pundit", "savant"],"abate":["	subside, die down/away/out, lessen, ease (off), let up, decrease"],"chicanery":["deceitfulness, duplicity, dishonesty,"],"latent":["dormant, untapped, unused, undiscovered, hidden"],"coagulate":["congeal, clot, thicken, jell"],"laud":["praise, extol, hail, applaud, acclaim"],"dissonance":["discord,conflict"],"cogent":["convincing, compelling, strong, forceful, powerful"],"levity":["high spirits, vivacity, liveliness, cheerfulness"]};
+	var ant={"connoisseur":["groundling, lowbrow, materialist, philistine"],"abate":["intensify, increase"],"chicanery":["honesty","truthfulness"],"latent":["active,clear"],"coagulate":["disperse, liquify"],"laud":["criticize,humiliate"],"dissonance":["accord,peace"],"cogent":["impotent, invalid"],"levity":["seriousness"]};
 	var audio=["https://ssl.gstatic.com/dictionary/static/sounds/de/0/connoisseur.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/abate.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/chicanery.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/latent.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/coagulate.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/laud.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/dissonance.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/cogent.mp3","https://ssl.gstatic.com/dictionary/static/sounds/de/0/levity.mp3"];
-	var hints={"Connoisseur":["Connoisseur is always SURE as he is an expert or a good judge"],"abate":["rebate means discount i.e reducing the price.. abate and rebate are rhyming words"],"chicanery":["chicanery sounds like shikari who uses means of deception to trick animals into his traps"],"latent":["Latent heat can be seen as heat which is hidden"],"coagulate":["Colgate - think about the thick paste"],"laud":["O, Lord! Let me laud You for all your help"],"dissonance":[":DIS RESONANCE--not resonant so not in harmony"],"cogent":["cogent - gent - a gentle person is always the right person to convince others."],"levity":["lev(leave)+it+y(.yaar)..you casually leave things without any seriousness"]};
-	var explanation=["A Connoisseur of Music","nothing abated his crusading zeal","an underhanded person who schemes corruption and political chicanery behind closed doors","discovering her latent talent for diplomacy","blood had coagulated around the edges of the wound","the obituary lauded him as a great statesman and soldier","an unusual degree of dissonance for such choral styles","Our professor is very cogent","As an attempt to introduce a note of levity, the words were a disastrous flop"];
+	var hints={"connoisseur":["connoisseur is always SURE as he is an expert or a good judge"],"abate":["rebate means discount i.e reducing the price.. abate and rebate are rhyming words"],"chicanery":["chicanery sounds like shikari who uses means of deception to trick animals into his traps"],"latent":["Latent heat can be seen as heat which is hidden"],"coagulate":["Colgate - think about the thick paste"],"laud":["O, Lord! Let me laud You for all your help"],"dissonance":[":DIS RESONANCE--not resonant so not in harmony"],"cogent":["cogent - gent - a gentle person is always the right person to convince others."],"levity":["lev(leave)+it+y(.yaar)..you casually leave things without any seriousness"]};
+	var explanation=["A connoisseur of Music","nothing abated his crusading zeal","an underhanded person who schemes corruption and political chicanery behind closed doors","discovering her latent talent for diplomacy","blood had coagulated around the edges of the wound","the obituary lauded him as a great statesman and soldier","an unusual degree of dissonance for such choral styles","Our professor is very cogent","As an attempt to introduce a note of levity, the words were a disastrous flop"];
 	var colors=["black","ForestGreen","red","black","black","ForestGreen","red","ForestGreen","ForestGreen"];
 	var notes=["The fact that, in practice, the judgments even of connoisseurs are perpetually at variance.","subside","trick people","latent heat","colgate(thick)","praise lord(laud)","dis-resonance","co-GENT","leave it"];
 	var i=0;
@@ -132,7 +133,7 @@
 		});
 				
 		$('#hint').html("<strong>Hints: </strong>"+hints[words[i]]);
-		$('#explain').html("<strong>Explanation: </strong>"+explanation[i]);
+		$('#explain').html("<strong>Usage: </strong>"+explanation[i]);
 		$("#image").html("<img src='"+image[0]+"' height='500' width='500' style='border:10px outset silver;'/>");
 		$('#soun').append("<img src='hearit.png' id='xx' class='btn btn-link'><audio id='sound1' src='"+audio[i]+"' preload='auto'></audio>");
 
@@ -176,7 +177,7 @@
 			$('#saved').css('visibility','visible');
 		});
 		$('#hint').html("<strong>Hints: </strong>"+hints[words[i]]);
-		$('#explain').html("<strong>Explanation: </strong>"+explanation[i]);
+		$('#explain').html("<strong>Usage: </strong>"+explanation[i]);
 		$("#image").html("<img src='"+image[i]+"' height='500' width='500' style='border:10px outset silver;'/>");
 		//$("#word").append("<img src='http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg' />");
 		
@@ -256,7 +257,7 @@ $('#meaning').html("<strong>Meaning: </strong>"+meanings[i]);
 			$('#saved').css('visibility','visible');
 		});
 				$('#hint').html("<strong>Hints: </strong>"+hints[words[i]]);
-		$('#explain').html("<strong>Explanation: </strong>"+explanation[i]);
+		$('#explain').html("<strong>Usage: </strong>"+explanation[i]);
 		$("#image").html("<img src='"+image[i]+"' height='500' width='500' style='border:10px outset silver;'/>");
 		//$("#word").append("<img src='http://www.planwallpaper.com/static/images/Winter-Tiger-Wild-Cat-Images.jpg' />");
 		

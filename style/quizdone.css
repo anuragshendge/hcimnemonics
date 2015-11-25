@@ -45,7 +45,7 @@ color:yellow;
 #done
 {
 	position: absolute;
-	left: 20%;
+	left: 15%;
 	top:15%;
 	width:80%;
 }
@@ -61,6 +61,6 @@ color:yellow;
 {
 	position:fixed;
 	left:38%;
-	top:80%;
+	top:85%;
 	color:blue;
 }
