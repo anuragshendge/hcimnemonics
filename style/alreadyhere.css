@@ -38,7 +38,11 @@ right:5%;
 top:2%;
 }
 
+#fir:hover,#sec:hover
+{
 
+color:yellow;
+}
 .menu
 {
 display:block;
@@ -56,7 +60,24 @@ top:40%;
 left:40%;
 
 }
-.menu:hover
+.menu1
+{
+display:block;
+width:100px;
+height:100px;
+border-radius:100px;
+font-size:20px;
+color:orangered;
+line-height:100px;
+text-align:center;
+text-decoration:none;
+background:#000;
+position:absolute;
+top:40%;
+left:40%;
+
+}
+.menu:hover, .menu1:hover
 {
 
 position:absolute;
@@ -64,7 +85,7 @@ position:absolute;
 color:#ccc;
 text-decoration:none;
 background:#333;
-zoom:200%;
+zoom:120%;
 z-index:1;
 }
 

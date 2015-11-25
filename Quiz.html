@@ -22,9 +22,9 @@
 
 	<h5><div id="bar_elem">
 	
-	<strong><a href="HomePage.html">Home</a></strong>&nbsp&nbsp&nbsp 
+	<strong><a href="HomePage.html" id="fir">Home</a></strong>&nbsp&nbsp&nbsp 
 
-	<strong><a href="Logout.html">Logout</a></strong>
+	<strong><a href="Logout.html" id="sec">Logout</a></strong>
 	
 
 	<br>
@@ -36,14 +36,14 @@
 <div id="qanda">
 <h3><p id="number"></p></h3>
 <h1><p id="word"></p></h1>
-<input type="radio" value="1" id="r1" name="t" checked="checked" /><span id="s1">First</span><br><br>
-<input type="radio" value="2" id="r2" name="t" /><span id="s2">Second</span><br><br>
-<input type="radio" value="3" id="r3" name="t" /><span id="s3">Third</span><br><br>
-<input type="radio" value="4" id="r4" name="t" /><span id="s4">Fourth</span><br><br>
+<input type="radio" value="1" id="r1" name="t" checked="checked" /><span id="s1">become less in amount</span><br><br>
+<input type="radio" value="2" id="r2" name="t" /><span id="s2">an expert judge in matters of taste</span><br><br>
+<input type="radio" value="3" id="r3" name="t" /><span id="s3">the use of tricks</span><br><br>
+<input type="radio" value="4" id="r4" name="t" /><span id="s4">praise</span><br><br>
 </div>
 
 <div id="buttons">
-<button id="blue" class="btn btn-primary">Positive</button>
+<button id="blue" class="btn btn-success">Positive</button>
 <button id="red" class="btn btn-danger">Negative</button>
 <button id="white" class="btn btn-default">Neutral</button>
 </div>
@@ -53,7 +53,7 @@
 <script type="text/javascript">
 
 
-var words=["first","second","third","fourth","fifth"];
+var words=["Connoisseur","abate","chicanery","latent","coagulate"];
 var i=0;
 $('#number').text(1+"/5)");
 $('#word').text(words[0]);
@@ -95,7 +95,7 @@ $('#word').css('color','red');
 
 $('#blue').click(function(){
 
-$('#word').css('color','blue');
+$('#word').css('color','ForestGreen');
 
 });
 

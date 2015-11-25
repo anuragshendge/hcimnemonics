@@ -37,11 +37,17 @@ position: absolute;
 right:5%;
 top:2%;
 }
+
+#fir:hover,#sec:hover
+{
+
+color:yellow;
+}
 #word
 {
 position: absolute;
 right:640px;
-top:23px;
+top:40px;
 }
 #buttons{
 	position:absolute;

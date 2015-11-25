@@ -37,6 +37,11 @@ position: absolute;
 right:5%;
 top:2%;
 }
+#fir:hover,#sec:hover
+{
+
+color:yellow;
+}
 .menu
 {
 display:block;
